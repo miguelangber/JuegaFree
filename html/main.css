@@ -1,0 +1,82 @@
+.main{
+    margin: 0px 2% 50px;
+    /* height: 500px; */
+    display: grid;
+    grid-template-columns: 75% 1fr;
+    column-gap: 4%;
+}
+.principal{
+    box-shadow: 0px 0px 10px 0px;
+    border-radius: 15px;
+    background-color: white;
+}
+.novedades-title{
+    font-size: 46px;
+    margin: 50px 0px 20px 50px;
+    color: rgb(98, 139, 167);
+}
+.down-arrow{
+    color: rgb(98, 139, 167);
+}
+.novedades{
+    justify-items: center;
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0%;
+    row-gap: 15px;
+}
+.novedad{
+    background-color: rgba(178, 214, 219, 0.479);
+    /* border: 2px solid rgb(0, 53, 83); */
+    border-top-left-radius: 20% 10%;
+    border-top-right-radius: 20% 10%;
+    width: 95%;
+    padding: 10px 0px 15px;
+    text-align: center;
+    position: relative;
+}
+.novedad-titulo{
+    margin:0px 10px 15px;
+}
+.img-novedad{
+    width: 90%;
+}
+/* .image-tags{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+} */
+.sub-img{
+    display: inline-block;
+    color: rgb(15, 20, 27);
+    border: 1px solid rgba(116, 164, 196, 0.75);
+    padding: 0px 5px;
+    margin: 2px 5px;
+}
+.img-novedad:hover{
+    filter: brightness(0.4);
+    transition: .2s ease-in-out;
+}
+.img-novedad:hover .image-tags{
+    display: inline;
+}
+@media (max-width: 1000px){
+    .main{
+        grid-template-columns: 1fr 190px;
+    }
+    .novedades{
+        grid-template-columns: 1fr 1fr;
+    }
+    /* .novedad{
+        width: 250px;
+    } */
+}
+
+@media (max-width: 800px){
+    .main{
+        grid-template-columns: 1fr;
+    }
+}

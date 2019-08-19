@@ -1,0 +1,89 @@
+.pestanas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.pestana{
+    color: #000;
+    border-left: 1px solid rgb(99, 98, 98);
+    border-right: 1px solid rgb(99, 98, 98);
+    border-bottom: 1px solid rgb(99, 98, 98);
+    text-align: center;
+    height: 25px;
+    padding-top: 10px;
+}
+#p-ficha{
+    border-left: none;
+    border-bottom:none;
+}
+#p-multimedia{
+    border-right: none;
+}
+#dos, #tres, #cuatro, #cinco{
+    display: none;
+}
+
+
+.container-ficha, .container-analisis{
+    margin: auto;
+    width: 95%;
+}
+
+.slider-container{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+.slider{
+    width: 80%
+}
+.information-container, .game-tags-container{
+    margin: 20px;
+}
+.game-tag{
+    margin: 5px;
+    display: inline-block;
+    padding: 10px;
+    width: auto;
+}
+.grid-analisis{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 100px;
+    column-gap: 30px;
+    justify-content: center;
+    margin: 40px 0px;
+}
+/* .analisis{
+} */
+.logo-analisis{
+    max-height: 100px;
+    min-height: 100px;
+    max-width: 90%;
+    min-width: 100px;
+    width: auto;
+    
+}
+.nota-analisis{
+    margin-right: 20px;
+    font-size: 100px;
+    float: left;
+
+}
+/* .texto-analisis{
+} */
+.leer-mas{
+    display: inline-block;
+    color: rgb(51, 51, 51);
+    text-decoration: underline;
+}
+@media (max-width: 1000px){
+    .grid-analisis{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 100px;
+        column-gap: 30px;
+        justify-content: center;
+        margin: 40px 0px;
+    }
+}

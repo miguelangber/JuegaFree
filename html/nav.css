@@ -1,0 +1,56 @@
+.navigation{
+    background-color: rgb(116, 164, 196);
+    display: grid;
+    grid-template-columns: 200px auto 100px;
+}
+.logo{
+    height: 65px;
+    margin: auto;
+}
+.enlaces{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.enlace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.enlace:hover{
+    background-color: rgb(56, 138, 192);
+    color: white;
+    -webkit-transition: .2s ease-in-out;
+    transition: .15s ease-in-out;
+}
+.icono-hamburguesa, .icono-busqueda{
+    display:none;
+}
+.fas{
+    color: black;
+}
+@media (max-width: 800px){
+    .navigation{
+        display: grid;
+        grid-template-columns: 40% auto 20% 20% ;
+        height: 90px;
+    }
+    .logo{
+        height: 80px;
+        z-index: 1;
+    }.enlaces{
+        display: none;
+    }
+    .icono-hamburguesa{
+        display:inline;
+        font-size: 50px;
+        margin: auto;
+        grid-column: 4;
+    }.icono-busqueda{
+        display:inline;
+        font-size: 45px;
+        margin: auto;
+        grid-column: 3;
+    }
+
+}

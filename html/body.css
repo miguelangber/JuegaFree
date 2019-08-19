@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+.body{
+    background-image: url("../logo/logo_background_final.png");
+    display: grid;
+    grid-template-rows: auto 1fr 150px;
+    row-gap: 30px;
+    list-style: none;
+}
+footer{
+    color: white;
+    background-color: black;
+}
+@media (max-width: 800px){
+    *{
+        margin: 0px;
+        padding: 0%;
+    }
+    .body{
+        row-gap: 10px;
+    }
+}
