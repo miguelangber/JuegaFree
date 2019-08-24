@@ -70,12 +70,16 @@
     float: left;
 
 }
-/* .texto-analisis{
-} */
 .leer-mas{
     display: inline-block;
     color: rgb(51, 51, 51);
     text-decoration: underline;
+}
+.contenedor-requisitos{
+    width: 50%;
+    margin: auto auto auto 20px;
+}
+.enlace-descargas{
 }
 @media (max-width: 1000px){
     .grid-analisis{
