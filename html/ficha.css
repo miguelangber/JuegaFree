@@ -23,7 +23,7 @@
 }
 
 
-.container-ficha, .container-analisis{
+.pestana-ficha, .pestana-analisis{
     margin: auto;
     width: 95%;
 }
@@ -75,11 +75,28 @@
     color: rgb(51, 51, 51);
     text-decoration: underline;
 }
+.container-descargar{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 60% 1fr;
+}
+.titulo-requisitos{
+    grid-column: 1 / span 2;
+    margin: 20px 10px;
+}
 .contenedor-requisitos{
-    width: 50%;
-    margin: auto auto auto 20px;
+    margin: 0px 10px;
+    grid-row: 2;
+}
+.contenedor-requisitos ul{
+    list-style: none;
+    margin: 20px 10px; 
 }
 .enlace-descargas{
+    margin: auto;
+    grid-row: 2;
 }
 @media (max-width: 1000px){
     .grid-analisis{
